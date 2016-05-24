@@ -128,4 +128,63 @@ $(document).ready(function () {
  		}
  		
  	});
+	// To scroll fullwindow and particular div jquery
+	$.fn.fullpage.setAllowScrolling(false);
+	$.fn.fullpage.setKeyboardScrolling(false);
+	$('#fullpage').mouseenter(function() {
+		$('body').bind('mousewheel DOMMouseScroll', function() {
+		    return false;
+	    });
+	  	$(this).bind('mousewheel DOMMouseScroll', function() {
+	        return true;
+	    });
+	  	$.fn.fullpage.setAllowScrolling(true);
+		$.fn.fullpage.setKeyboardScrolling(true);
+	});
+	$('#fullpage').mouseleave(function() {
+		$('body').unbind();
+	  	$.fn.fullpage.setAllowScrolling(false);
+		$.fn.fullpage.setKeyboardScrolling(false);
+	});
+	$('.bottom_image1').hover(function() {
+		$('.services_content_hover').css('display','none');
+		$('.web_content_hover').css('display','block');
+		
+	},function() {
+		$('.web_content_hover').css('display','none');
+		$('.services_content_hover').css('display','block');
+	});
+	$('.bottom_image2').hover(function() {
+		$('.services_content_hover').css('display','none');
+		$('.ecom_content_hover').css('display','block');
+		
+	},function() {
+		$('.ecom_content_hover').css('display','none');
+		$('.services_content_hover').css('display','block');
+	});
+	$('.bottom_image3').hover(function() {
+		$('.services_content_hover').css('display','none');
+		$('.responsive_content_hover').css('display','block');
+		
+	},function() {
+		$('.responsive_content_hover').css('display','none');
+		$('.services_content_hover').css('display','block');
+	});
+	$('.bottom_image4').hover(function() {
+		$('.services_content_hover').css('display','none');
+		$('.seo_content_hover').css('display','block');
+		
+	},function() {
+		$('.seo_content_hover').css('display','none');
+		$('.services_content_hover').css('display','block');
+	});
+	$('.bottom_image5').hover(function() {
+		$('.services_content_hover').css('display','none');
+		$('.app_content_hover').css('display','block');
+		
+	},function() {
+		$('.app_content_hover').css('display','none');
+		$('.services_content_hover').css('display','block');
+	});
 });
+

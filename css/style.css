@@ -8,7 +8,9 @@
 }
 .fl{ float:left; }
 .fr{ float:right; }
-.np{ padding: 0px;}
+.np{ padding: 0px;
+ /*margin: 0px 0px -20px 0px;*/
+ overflow: hidden;}
 a:hover{ text-decoration:none !important; }
 .logo code{
 	background: rgba(0, 0, 0, 0) url("../images/logo.png") no-repeat scroll 0 0 / 250px auto;
@@ -356,14 +358,14 @@ a:hover{ text-decoration:none !important; }
     width: 50px !important;
 }
 @media (min-width:789px){
-	.web_txt3{
-		background: #000 none repeat scroll 0 0 !important;
-	    height: 30px !important;
-	    left: 165px !important;
-	    margin: 0 !important;
-	    top: 236px !important;
-	    width: 50px !important;
-	}
+	.web_txt3 {
+        background: #000 none repeat scroll 0 0 !important;
+        height: 26px !important;
+        left: 136px !important;
+        margin: 0 !important;
+        top: 236px !important;
+        width: 43px !important;
+    }
 }
 .web_txt4 {
     color: #000 !important;
@@ -455,6 +457,7 @@ a:hover{ text-decoration:none !important; }
     color: #fff;
     margin-bottom: 2px;
      font-weight: bold;
+margin-top :16px;
 }
 .about_us_content{
     color: #8b8b8b;
@@ -810,7 +813,7 @@ h1.services_heading {
 }
 #port_trans2::before {
     border-bottom: 90px solid rgba(225, 225, 225, 0.98);
-    border-left: 150px solid transparent;
+    border-left: 147px solid transparent;
     border-right: 155px solid transparent;
     content: "";
     height: 0;
@@ -819,14 +822,14 @@ h1.services_heading {
     top: -90px;
     width: 0;
 }
-#port_trans2::after {
-    border-left: 153px solid transparent;
-    border-right: 151px solid transparent;
+#port_trans2::after  {
+    border-left: 152px solid transparent;
+    border-right: 149px solid transparent;
     border-top: 91px solid rgba(225, 225, 225, 0.98);
     bottom: -91px;
     content: "";
     height: 0;
-    left: -2px;
+    left: -1px;
     position: absolute;
     width: 0;
 }
@@ -874,23 +877,23 @@ h1.services_heading {
 }
 #port_trans1::before {
     border-bottom: 72px solid rgba(0, 0, 0, 0.87);
-    border-left: 128px solid transparent;
-    border-right: 120px solid transparent;
+    border-left: 126px solid transparent;
+    border-right: 123px solid transparent;
     content: "";
     height: 0;
-    left: -2px;
+    left: -1px;
     position: absolute;
     top: -72px;
     width: 0;
 }
 #port_trans1::after {
-    border-left: 126px solid transparent;
-    border-right: 125px solid transparent;
+    border-left: 124px solid transparent;
+    border-right: 124px solid transparent;
     border-top: 70px solid rgba(0, 0, 0, 0.87);
     bottom: -70px;
     content: "";
     height: 0;
-    left: -2px;
+    left: 0;
     position: absolute;
     width: 0;
 }
@@ -1207,7 +1210,7 @@ h1.services_heading {
 	}
 }
 #item8 {
-    background-image: url("../images/portfolio_aasai.png");
+    background-image: url("../images/portfolio_kumaran.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 240px;
@@ -1216,7 +1219,7 @@ h1.services_heading {
 }
 @media (min-width:789px){
 	#item8 {
-	    background-image: url("../images/portfolio_aasai.png");
+	    background-image: url("../images/portfolio_kumaran.png");
 	    background-repeat: no-repeat;
 	    background-size: 100% auto;
 	    height: 300px;
@@ -1224,6 +1227,44 @@ h1.services_heading {
 	    top: 6px;
 	    width: 285px;
 	}
+}
+#item9{
+    background-image: url("../images/portfolio_mathi.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 240px;
+    position: relative;
+    top: 6px;
+}
+@media (min-width:789px){
+    #item9 {
+        background-image: url("../images/portfolio_mathi.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 300px;
+        position: relative;
+        top: 6px;
+        width: 285px;
+    }
+}
+#item10 {
+    background-image: url("../images/portfolio_mathi.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 240px;
+    position: relative;
+    top: 6px;
+}
+@media (min-width:789px){
+    #item10 {
+        background-image: url("../images/portfolio_mathi.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 300px;
+        position: relative;
+        top: 6px;
+        width: 285px;
+    }
 }
 .item h1 {
     color: #fff;
@@ -1399,7 +1440,7 @@ h1.services_heading {
 	}
 }
 #item8:hover {
-    background-image: url("../images/asai_hover.png");
+    background-image: url("../images/kumaran_hover.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 240px;
@@ -1408,7 +1449,7 @@ h1.services_heading {
 }
 @media (min-width:789px){
 	#item8:hover {
-	    background-image: url("../images/asai_hover.png");
+	    background-image: url("../images/kumaran_hover.png");
 	    background-repeat: no-repeat;
 	    background-size: 100% auto;
 	    height: 300px;
@@ -1417,18 +1458,65 @@ h1.services_heading {
 	    width: 285px;
 	}
 }
-#map{
+#item9:hover {
+    background-image: url("../images/mathi_hover.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 240px;
+    position: relative;
+    top: 6px;
+}
+@media (min-width:789px){
+    #item9:hover {
+        background-image: url("../images/mathi_hover.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 300px;
+        position: relative;
+        top: 6px;
+        width: 285px;
+    }
+}
+#item10:hover {
+    background-image: url("../images/mathi_hover.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 240px;
+    position: relative;
+    top: 6px;
+}
+@media (min-width:789px){
+    #item10:hover {
+        background-image: url("../images/mathi_hover.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 300px;
+        position: relative;
+        top: 6px;
+        width: 285px;
+    }
+}
+/*#map{
 	width:100%;
 	cursor:-moz-grab; 
 	cursor:-webkit-grab;
+}*/
+.contactus_page {
+    background: url('../images/contactus_map.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor:-moz-grab; 
+    cursor:-webkit-grab;
 }
 .contactus_page {
     position :relative;
+    margin: 0px;
 }
 .contactus_left {
     background : #cccccc;
     position: relative;
     height:150px;
+    padding:0px;
 }
 @media (min-width:789px){
 	.contactus_left {
@@ -1446,10 +1534,13 @@ h1.services_heading {
 @media (min-width:789px){
 	.contactus_right {
 	    background: rgba(255,255,255,0.9);
-	    position :absolute;
+	 /*   position :absolute;
 	    right:0px;
-	    top:0px;
+	    top:0px;*/
 	}
+}
+.contactus {
+    padding:0;
 }
 .contact_technologies{
     padding: 0px;
@@ -1693,7 +1784,31 @@ h1.services_heading {
     color: #fff;
     background :none !important;
 }
+.web_content_hover {
+	display:none;
+}
+.ecom_content_hover {
+	display:none;
+}
+.responsive_content_hover {
+	display:none;
+}
+.seo_content_hover {
+	display:none;
+}
 
+.app_content_hover {
+	display:none;
+}
+.sp-buttons {
+    left: 16px;
+    position: absolute !important;
+    top: 265px;
+}
 
-
-
+.sp-selected-button {
+    background-color: gold !important;
+}
+.sp-button {
+    border: 2px solid #fff !important;
+}
