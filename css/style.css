@@ -1644,11 +1644,13 @@ h1.services_heading {
 .text_area{
 	width: 100%;
 	height: 100px;
+    resize: none;
 }
 @media (min-width:789px){
 	.text_area{
 		width: 400px;
 		height: 180px;
+        resize: none;
 	}
 }
 .send_btn{
@@ -1811,4 +1813,51 @@ h1.services_heading {
 }
 .sp-button {
     border: 2px solid #fff !important;
+}
+
+
+/*
+Back to top button 
+*/
+#back-top {
+    position: fixed;
+    bottom :20px;
+    z-index: 9999;
+}
+#back-top a {
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bbb;
+    /* background color transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover {
+    color: #000;
+}
+/* arrow icon (span tag) */
+#back-top span {
+    height: 64px;
+    width: 70px;
+    display: block;
+    margin-bottom: 7px;
+    background: #ddd url('../images/up-arrow.png') no-repeat center center;
+    /* rounded corners */
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    /* background color transition */
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover span {
+    background-color: #777;
+}
+#fp-nav ul li:last-child  {
+    display :none;
 }
