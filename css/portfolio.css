@@ -49,7 +49,7 @@
     background-size: contain;
 }
 .port_bg{
-	height: 700px;
+	height: 573px;
 	width: 100%
 }
 .down_icon {
@@ -329,7 +329,7 @@
     line-height: 2;
 }
 .popup_box_thozha,.popup_box_events,.popup_box_happi,.popup_box_zero,.popup_box_synclio,.popup_box_wct {
-    height: 700px;
+    height: auto;
     left: 0;
     padding: 0;
     top: 0px;
@@ -345,7 +345,7 @@
 .first_part_thozha code {
     background: rgba(0, 0, 0, 0) url("../images/popup_thozha.png") no-repeat scroll 0 0 / cover ;
     height: 302px;
-    left: 150px;
+    left: 98px;
     position: absolute;
     top: 30%;
     width: 500px;
@@ -366,7 +366,7 @@
     cursor: pointer;
 }
 .popup_details {
-    padding: 92px 85px 0;
+    padding: 92px 30px 0;
 }
 .popup_title h2 {
     color: #000;
@@ -400,7 +400,7 @@
 .first_part_events code {
     background: rgba(0, 0, 0, 0) url("../images/popup_events.png") no-repeat scroll 0 0 / 90% auto;
     height: 302px;
-    left: 150px;
+    left: 73px;
     position: absolute;
     top: 30%;
     width: 530px;
@@ -497,7 +497,7 @@
     left: 8px;
     position: absolute;
     top: 10%;
-    width: 365px;
+    width: 326px;
 }
 .first_part_happi code {
     background: rgba(0, 0, 0, 0) url("../images/popup_happi.png") no-repeat scroll 0 0 / cover ;
@@ -524,20 +524,20 @@
     width: 278px;
 }
 .first_part_synclio code {
-    background: rgba(0, 0, 0, 0) url("../images/popup_synclio.png") no-repeat scroll 0 0 / cover ;
-    height: 180px;
-    left: 43px;
+    background: rgba(0, 0, 0, 0) url("../images/popup_synclio.jpg") no-repeat scroll 0 0 / cover ;
+    height: 178px;
+    left: 94px;
     position: absolute;
     top: 10%;
-    width: 278px;
+    width: 168px;
 }
 .first_part_wct code {
     background: rgba(0, 0, 0, 0) url("../images/popup_wct.png") no-repeat scroll 0 0 / 100% auto;
     height: 180px;
-    left: 43px;
     position: absolute;
     top: 10%;
-    width: 278px;
+    left: 68px;
+    width: 208px;
 }
 .popup_box_thozha,.popup_box_events,.popup_box_happi,.popup_box_zero,.popup_box_synclio,.popup_box_wct {
     height: 460px;
@@ -571,14 +571,14 @@
     background-size: cover;
 }
 .popup_box_thozha,.popup_box_events,.popup_box_happi,.popup_box_zero,.popup_box_synclio,.popup_box_wct {
-    height: 512px;
+    height: 352px;
     left: 0;
     padding: 0;
-    top: 60px;
     z-index: 9999;
     position: fixed;
     display: none;
     overflow: auto;
+    top: 14px;
 }
 }
 
@@ -617,4 +617,29 @@
 }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
 	border-color: #fff !important;
+}
+.popup_content p {
+    text-indent: 30px;
+}
+.happi_new_point {
+    padding: 0px !important;
+}
+.happi_new {
+    padding: 0 12px 2px 0 !important;
+}
+.wellocity_new {
+    padding: 6px !important;
+}
+.featured_title h5 {
+    line-height: 25px;
+    padding: 0 90px;
+}
+@media (max-width: 768px) {
+   .featured_title h5 {
+        line-height: 25px;
+        padding: 0;
+}
+}
+.navbar-header button {
+    background-color: gray;
 }
