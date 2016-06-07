@@ -1,13 +1,63 @@
 $(document).ready(function () {
+	$(document).on( "keydown", function( event ) {
+		//page down and down arrow action
+		if(event.which == 34 || event.which == 40){
+			event.preventDefault();
+			var windowscroll = $(window).scrollTop();
+			if(windowscroll >= 0 && windowscroll< 824){// scroll to second part
+				$('html, body').stop().animate({scrollTop: 824}, 1000);
+			}
+			else if(windowscroll >= 824 && windowscroll< 1710){ //scroll to third part
+				$('html, body').stop().animate({scrollTop: 1710}, 1000);
+			}
+			else if(windowscroll >= 1710 && windowscroll< 2500){ //scroll to third part
+				$('html, body').stop().animate({scrollTop: 2500}, 1000);
+			}
+			else if(windowscroll >= 2500 && windowscroll< 3317){ //scroll to third part
+				$('html, body').stop().animate({scrollTop: 3317}, 1000);
+			}
+			else if(windowscroll >= 3317 && windowscroll< 4203){ //scroll to third part
+				$('html, body').stop().animate({scrollTop: 4203}, 1000);
+			}
+			else if(windowscroll>= 4203){
+				$("html, body").animate({ scrollTop: $(document).height()-$(window).height() },1000);
+			}
+		}
+		//page up and up arrow action
+		if(event.which == 33 || event.which == 38){
+			event.preventDefault();
+			var windowscroll = $(window).scrollTop();
+			if(windowscroll > 0 && windowscroll<= 824){ //scroll to first part
+					$('html, body').stop().animate({scrollTop: 0}, 1000);
+			}
+			else if(windowscroll > 824 && windowscroll<= 1710){ // scroll to second part
+				$('html, body').stop().animate({scrollTop: 824}, 1000);
+			}
+			else if(windowscroll > 1710 && windowscroll<= 2500){ // scroll to second part
+				$('html, body').stop().animate({scrollTop: 1710}, 1000);
+			}
+			else if(windowscroll > 2500 && windowscroll<= 3317){ // scroll to second part
+				$('html, body').stop().animate({scrollTop: 2500}, 1000);
+			}
+			else if(windowscroll > 3317 && windowscroll<= 4203){ // scroll to second part
+				$('html, body').stop().animate({scrollTop: 3317}, 1000);
+			}
+			else if(windowscroll> 4203){//scroll to third part
+				$('html, body').stop().animate({scrollTop: 4203}, 1000);
+			}
 
-	//nav menu show and hide
-	$('.menu_bar').click(function(){
-		$('.nav_area').css({'display':'block'});
+		}
+		// Home key and End key action
+			if(event.which == 36){
+				event.preventDefault();
+				$('html, body').stop().animate({scrollTop: 0}, 1000);
+			}
+			else if(event.which == 35){
+				event.preventDefault();
+				$("html, body").animate({ scrollTop: $(document).height()-$(window).height() },1000);
+			}
 	});
-	$('.close_menu,.nav_area').click(function(){
-		$('.nav_area').css({'display':'none'});
-	});
-	
+
 	//full page plugin
 	$('#fullpage').fullpage({
 		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#163ac0', '#4d0ad6'],

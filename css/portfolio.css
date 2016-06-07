@@ -41,7 +41,7 @@
 .port_bg code {
     background: rgba(0, 0, 0, 0) url("../images/portfolio_background.png") no-repeat scroll 0 0 / cover ;
     border-radius: 0;
-    height: 700px;
+    height: 571px;
     left: 0;
     padding: 0;
     position: absolute;
@@ -53,12 +53,12 @@
 	width: 100%
 }
 .down_icon {
+    bottom: 0;
     color: #000;
     cursor: pointer;
     font-size: 40px;
-    left: 49.3%;
+    left: 49%;
     position: absolute;
-    top: 94%;
 }
 .featured_title {
     padding: 90px 0 60px;
@@ -176,9 +176,9 @@
     cursor: pointer;
     display: none;
     height: 242px;
-    padding: 60px 0;
+    padding: 60px 6px 60px 6px;
     position: absolute;
-    text-align: center;
+    /*text-align: center;*/
     width: 260px;
 }
 @media (min-width:789px){
@@ -189,8 +189,8 @@
 	    width: 400px;
 	    display: none;
 	    cursor: pointer;
-	    padding: 90px 0;
-	    text-align :center;
+	    padding: 90px 70px;
+/*	    text-align :center;*/
 	}
 
 }
@@ -221,19 +221,21 @@
 .product_img1_hover h2,.product_img2_hover h2,.product_img3_hover h2,.product_img4_hover h2,.product_img5_hover h2,.product_img6_hover h2 {
     background: #000 none repeat scroll 0 0;
     height: 23px;
-    left: 20px;
+    /*left: 20px;*/
     margin: 0;
-    position: absolute;
+    /*position: absolute;*/
     width: 43px;
+    float: left;
 }
 @media (min-width:789px){
 	.product_img1_hover h2,.product_img2_hover h2,.product_img3_hover h2,.product_img4_hover h2,.product_img5_hover h2,.product_img6_hover h2 {
 	    background: #000 none repeat scroll 0 0;
 	    height: 23px;
-	    left: 90px;
+	    /*left: 90px;*/
 	    margin: 0;
-	    position: absolute;
+	    /*position: absolute;*/
 	    width: 43px;
+        float: left;
 	}
 }
 
@@ -247,9 +249,9 @@
     font-family: Raleway;
     font-size: 20px;
     font-weight: bold;
-    left: 70px;
-    margin: 0;
-    position: absolute;
+   /* left: 70px;*/
+     margin: 0px;
+    /*position: absolute;*/
 }
 @media (min-width:789px){
 	.product_img1_hover > h5,.product_img2_hover > h5,.product_img3_hover > h5,.product_img4_hover > h5,.product_img5_hover > h5,.product_img6_hover > h5 {
@@ -258,9 +260,9 @@
 	    font-family: Raleway;
 	    font-size: 20px;
 	    font-weight: bold;
-	    left: 145px;
-	    margin: 0;
-	    position: absolute;
+	    /*left: 145px;*/
+         margin: 0px 0px 0px 10px ;
+	    /*position: absolute;*/
 	}
 }
 .product_img1, .product_img2, .product_img3, .product_img4, .product_img5, .product_img6 {
@@ -272,7 +274,7 @@
 	}
 }
 .footer_bg {
-    height: 145px;
+    height: 143px;
 }
 .footer_bg code{
 	background: rgba(0, 0, 0, 0) url("../images/footer_img.png") no-repeat scroll 0 0 / cover ;
@@ -283,7 +285,7 @@
     width: 100%;
 }
 .social_links {
-    left: 25%;
+    left: 16%;
     position: absolute;
     top: 0;
 }
@@ -571,7 +573,7 @@
     background-size: cover;
 }
 .popup_box_thozha,.popup_box_events,.popup_box_happi,.popup_box_zero,.popup_box_synclio,.popup_box_wct {
-    height: 352px;
+    height: 500px;
     left: 0;
     padding: 0;
     z-index: 9999;
@@ -642,4 +644,9 @@
 }
 .navbar-header button {
     background-color: gray;
+}
+.visit_page a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-decoration: none;
 }
