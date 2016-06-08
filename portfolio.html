@@ -259,6 +259,49 @@
             <div class="copyright">
                   <span>copyright©2016.Etekchnoservices.Pvt Ltd</span>
             </div><!--copyright-->
-       </footer>        
+       </footer>  
+        <script>
+          $(document).ready(function () {
+            $(document).on( "keydown", function( event ) {
+              //page down and down arrow action
+              if(event.which == 34 || event.which == 40){ //key pressing page down or down arrow
+                event.preventDefault();
+                var windowscroll = $(window).scrollTop();
+                if(windowscroll >= 0 && windowscroll< 684){ //scroll to first part
+                  $('html, body').stop().animate({scrollTop: 684}, 1000);
+                }
+                else if(windowscroll >= 684 && windowscroll< 1332){ //scroll to second part
+                  $('html, body').stop().animate({scrollTop: 1332}, 1000);
+                }
+                else if(windowscroll>= 1332){ //scroll to third part
+                  $("html, body").animate({ scrollTop: $(document).height()-$(window).height() },1000);
+                }
+              }
+              //page up and up arrow action
+              if(event.which == 33 || event.which == 38){ //key pressing page up or up arrow
+                event.preventDefault();
+                var windowscroll = $(window).scrollTop();
+                if(windowscroll > 0 && windowscroll<= 684){ //scroll to first part
+                  $('html, body').stop().animate({scrollTop: 0}, 1000);
+                }
+                else if(windowscroll > 684 && windowscroll<= 1332){ // scroll to second part
+                  $('html, body').stop().animate({scrollTop: 684}, 1000);
+                }
+                else if(windowscroll> 1332){//scroll to third part
+                  $('html, body').stop().animate({scrollTop: 1332}, 1000);
+                }
+              }
+              // Home key and End key action
+                if(event.which == 36){
+                  event.preventDefault();
+                  $('html, body').stop().animate({scrollTop: 0}, 1000);
+                }
+                else if(event.which == 35){
+                  event.preventDefault();
+                  $("html, body").animate({ scrollTop: $(document).height()-$(window).height() },1000);
+                }
+            });
+          });
+        </script>     
 </body>
 </html>

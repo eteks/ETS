@@ -1579,16 +1579,23 @@ h1.services_heading {
 	cursor:-moz-grab; 
 	cursor:-webkit-grab;
 }*/
-.contactus_page {
+/*.contactus_page {
     background: url('../images/contactus_map.png');
     background-repeat: no-repeat;
     background-size: cover;
     cursor:-moz-grab; 
     cursor:-webkit-grab;
+}*/
+.contactus {
+    overflow: hidden;
+    position: relative;
 }
 .contactus_page {
     position :relative;
     margin: 0px;
+}
+#map_area {
+    height: 755px;
 }
 .contactus_left {
     background : #cccccc;
@@ -1604,10 +1611,12 @@ h1.services_heading {
 	}
 }
 .contactus_right {
-    background: rgba(255,255,255,0.9);
-    position :relative;
-    right:0px;
-    top:0px;
+    background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
 }
 @media (min-width:789px){
 	.contactus_right {
@@ -1906,7 +1915,8 @@ Back to top button
 #back-top {
     position: fixed;
     bottom :20px;
-    z-index: 9999;
+    z-index: 9998;
+    right :10px;
 }
 #back-top a {
     display: block;
@@ -2203,7 +2213,7 @@ h4.title-technologies {
 .test {
     z-index: 9998 !important;
 }
-.fade_trans,.body_trans{
+.fade_trans, .body_trans, .scroll_top{
     transition: all 0.3s ease 0s;
 }
 .menu_list {
@@ -2229,3 +2239,6 @@ h4.title-technologies {
     position: fixed;
     z-index: 9998;
 }*/
+.gm-bundled-control-on-bottom {
+    left: 30px !important;
+}
