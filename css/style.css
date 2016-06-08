@@ -1589,6 +1589,14 @@ h1.services_heading {
 .contactus {
     overflow: hidden;
     position: relative;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .contactus {
+        overflow: hidden;
+        position: relative;
+        height: 900px;
+    }
 }
 .contactus_page {
     position :relative;
@@ -1596,6 +1604,11 @@ h1.services_heading {
 }
 #map_area {
     height: 755px;
+}
+@media (max-width:768px) {
+    #map_area {
+        height: 200px;
+}
 }
 .contactus_left {
     background : #cccccc;
@@ -1615,16 +1628,18 @@ h1.services_heading {
     float: right;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 200px;
     height: 100%;
 }
 @media (min-width:789px){
 	.contactus_right {
-	    background: rgba(255,255,255,0.9);
-	 /*   position :absolute;
-	    right:0px;
-	    top:0px;*/
-	}
+        background: rgba(255, 255, 255, 0.9) none repeat scroll 0 0;
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+}
 }
 .contactus {
     padding:0;
@@ -1688,7 +1703,7 @@ h1.services_heading {
 	margin :0 0 0 10px;
 }
 .address_holder{
-	padding: 35px 0 0 0px;
+	padding: 35px 0 0 40px;
 	/*width: 345px;*/
 }
 @media (min-width:789px){
@@ -1698,7 +1713,7 @@ h1.services_heading {
 	}
 }
 .message{
-	padding:0px;
+	padding:0px 0 0 40px;
 }
 @media (min-width:789px){
 	.message{
