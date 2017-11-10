@@ -1,0 +1,594 @@
+/* Namari Landing Page Dynamic Style Index
+
+1. Website Default Styling
+2. Navigation
+3. Primary and Secondary Colors
+4. Banner
+5. Typography
+6. Buttons
+7. Footer
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 1. Website Default Styling */
+/*------------------------------------------------------------------------------------------*/
+
+
+body {
+    background:#fff;
+}
+
+
+/* Default Link Color */
+
+a, .la-ball-triangle-path {
+    color:#9a5341;
+}
+
+a:hover, #header.nav-solid nav a:hover {
+    color:#9a5341;
+}
+
+/* Default Icon Color */
+
+.icon i {
+    color:#9a5341;
+}
+
+/* Border Color */
+
+#banner .section-heading:before, .testimonial.classic footer:before {
+    background: #9a5341;
+}
+
+.pricing-block-content:hover {
+    border-color:#9a5341;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 2. Navigation */
+/*------------------------------------------------------------------------------------------*/
+
+
+/* Transparent Navigation Color on a Banner */
+
+#header nav a, #header i {
+    color:#111;
+}
+
+
+/* Navigation Colors when the Navigation is sticky and solid */ 
+
+#header.nav-solid, #header.nav-solid a, #header.nav-solid i, #nav-mobile ul li a {
+    color:#333;
+}
+
+
+/* Navigation Active State */
+
+.drop_down
+{
+    width: 200px;
+    position: absolute;
+    display:none;
+    z-index: 999;
+    border-top: 1px solid #9a5341;
+    background: rgba(255,255,255,1);
+}
+
+.drop_down li
+{
+  
+    border-bottom: 1px solid #9a5341;
+    display:block !important;
+}
+.drop_down li a
+{
+    height: 45px !important;
+    line-height: 45px !important;
+}
+.drop_down ul
+{
+        width: 200px;
+        position: absolute;
+        display: none;
+        z-index: 999;
+        border-left: 1px solid #9a5341;
+        left: 100%;
+        background: rgba(255,255,255,0.5);
+        margin-top: -45px;
+}
+.act_link 
+{
+    color: #9a5341 !important;
+    border-color: #9a5341 !important;
+    border-bottom: 5px solid;
+}    
+
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 3. Primary and Secondary Colors */
+/*------------------------------------------------------------------------------------------*/
+
+
+/* Primary Background and Text Colors */
+
+.primary-color, .featured .pricing {
+    background-color:#9a5341;
+}
+
+.primary-color, .primary-color .section-title, .primary-color .section-subtitle, .featured .pricing, .featured .pricing p {
+    color:#fff;    
+}
+
+.section-heading h2:after {
+    background:#9a5341;
+    content:"";
+    display:block;
+    width:30px;
+    height:5px;
+    margin-top:30px;
+}
+
+.text-center .section-heading h2:after {
+    margin:30px auto 25px auto;
+}
+
+/* Primary Icon Colors */
+
+.primary-color .icon i, .primary-color i {
+    color:#fff;
+}
+
+
+/* Secondary Background and Text Colors */
+
+.secondary-color {
+    background-color:#f5f5f5;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 4. Banner */
+/*------------------------------------------------------------------------------------------*/
+
+
+/* Banner Background and Text Colors */
+
+#banner {
+    /*background: url("../images/banner-images/banner-image-1.jpg") no-repeat center top;*/
+    background-size:cover;
+}
+.p_index
+{
+    background: url("../images/banner-images/banner-image-1.jpg") no-repeat center top;
+}
+.error_test p{
+    display: none;
+    color: #9a5341 !important;
+}
+.error_mail p{
+    display: none;
+    color: #9a5341 !important;
+}
+.error_tele p{
+    display: none;
+    color: #9a5341 !important;
+}
+
+.success p{
+    display: none;
+    color: green !important;
+
+}
+.error_checkbox p{
+    display: none;
+    color: #9a5341 !important;
+}
+#quote_form
+{
+    max-width: 991px;
+    margin: 0 auto;
+}
+#quote_form > div > div
+{
+
+}
+.quote_form > div > div > label
+{
+    margin-right:5px;
+    float: left;
+}
+.quote_form > div > div > label span
+{
+    display: inline-block;
+    width: 175px;
+}
+.quote_form > div > div > input
+{
+  width:270px;
+}
+.quote_form > div > div > textarea
+{
+  width:270px;
+}
+.check-service
+{
+    float:left;
+}
+#check-service input
+{
+    margin-right:10px;
+}
+.p_about
+{
+    background: url("../images/banner-images/banner-image-2.jpg") no-repeat center top;
+    height: auto !important;
+}
+.about-page
+{
+ max-width:1200px;
+ margin:0 auto;
+}
+.about-page .section-heading
+{
+    padding:40px 0 0;
+}
+
+.about-page .section-title
+{
+    padding:0;
+}
+::-webkit-input-placeholder { /* Chrome */
+  color: #424242;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #424242;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #424242;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #424242;
+  opacity: 1;
+}
+/*------------------------------------------------------------------------------------------*/
+/* 4.1. services */
+/*------------------------------------------------------------------------------------------*/
+.p_services #content .text-left
+{
+   min-height: 300px;
+   background-size:cover;
+   margin-bottom:20px;
+}
+.p_services #content .text-left img
+{
+     max-width:300px;
+     width: 100%;
+}
+.digi_market
+{
+    background: url("../images/") no-repeat right bottom;
+}
+.anime
+{
+    background: url("../images/") no-repeat right bottom;
+}
+.emb_sys
+{
+    background: url("../images/") no-repeat right bottom;
+}
+.nav_app
+{
+    background: url("../images/") no-repeat right bottom;
+}
+/*------------------------------------------------------------------------------------------*/
+/* 4.2. career */
+/*------------------------------------------------------------------------------------------*/
+.p_career input
+{
+   width: 100%;
+}
+.p_career select
+{
+   width: 100%;
+}
+.p_career textarea
+{
+   width: 100%;
+}
+.error_test1
+{   
+    display: none;
+    color: #800006;
+    font-weight:bolder;
+}
+.error_mail1
+{
+    display: none;
+    color:#800006;
+    font-weight:bolder;
+}
+.error_tele1
+{
+    display: none;
+    color:#800006;
+    font-weight:bolder;
+}
+.success1{
+    display: none;
+    color:#b4de6a;
+    font-weight:bolder;
+    text-align:center;
+}
+/*------------------------------------------------------------------------------------------*/
+/* 4.3. contact */
+/*------------------------------------------------------------------------------------------*/
+.p_contact input
+{
+   width: 100%;
+}
+.p_contact textarea
+{
+   width: 100%;
+   min-height: 135px;
+}
+.file_space
+{
+    padding:7px 0;
+}
+.file_space label
+{
+ padding:4px 0;
+ float:left;
+ color: #424242;
+}
+.file_con
+{
+    font-size:12px;
+}
+.file_space input
+{    
+    float: left;
+    width: auto;
+    padding: 0 5px;
+}
+.contact_field{
+    display: none;
+    color: #9a5341;
+    font-weight:bolder;
+}
+.contact_mail{
+    display: none;
+    color: #9a5341;
+    font-weight:bolder;
+}
+.contact_no{
+    display: none;
+    color: #9a5341;
+    font-weight:bolder;
+}
+.contact_success{
+    display: none;
+    color: green;
+    font-weight:bolder;
+}
+/*------------------------------------------------------------------------------------------*/
+/* 5. products */
+/*------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------*/
+/* 5. Typography */
+/*------------------------------------------------------------------------------------------*/
+
+
+body {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:15px;
+    font-weight:normal;
+    color:#111;
+}
+
+/* Logo, if you are using Fonts as Logo and not image
+
+#logo h1 {
+    font-family:;
+    font-size:; 
+    font-weight:;
+    color:;
+}
+
+#logo h2 {
+    font-family:;
+    font-size:; 
+    font-weight:;
+    color:;
+}
+
+*/
+
+
+/* Banner Typography */
+
+#banner h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:62px;
+    line-height:60px;
+    font-weight:800;
+    color:#111;
+}
+
+#banner h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:18px;
+    font-weight:600;
+    color:#111;
+}
+
+
+/* Section Title and Subtitle */
+
+.section-title {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight:700;
+    color:#111;
+}
+
+.section-subtitle {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px;
+    font-weight:300;
+    color:#9c9c9c;
+}
+
+/* Testimonial */
+
+.testimonial q {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 17px; 
+    font-weight:300;
+}
+
+.testimonial.classic q, .testimonial.classic footer {
+    color:#111;
+}
+
+
+/* Standard Headings h1-h6 */
+
+h1 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 40px; 
+    font-weight:300;
+    color:#111;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 34px; 
+    font-weight:300;
+    color:#111;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 30px; 
+    font-weight:700;
+    color:#111;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 18px; 
+    font-weight:400;
+    color:#111;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 16px; 
+    font-weight:400;
+    color:#111;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size: 14px; 
+    font-weight:400;
+    color:#111;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 6. Buttons */
+/*------------------------------------------------------------------------------------------*/
+
+/* ----------Default Buttons---------- */
+
+
+/* Button Text */
+
+.button, input[type="submit"]  {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:14px;
+    font-weight:bold;
+    color:#111;
+}
+
+
+/* Button Color */
+
+.button, input[type="submit"] {
+    border-color:#111;
+}
+
+
+/* Button Hover Color */
+
+.button:hover,  input[type="submit"]:hover {
+    border-color:#9a5341;
+    color:#9a5341;
+}
+
+
+/* ----------Banner Buttons---------- */
+
+
+/* Button Text */
+
+#banner .button {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:16px;
+    color:#111;
+}
+
+#con_form .button {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:12px;
+    color:#111;
+}
+/* Button Color */
+
+#banner .button {
+    border-color:#111;
+}
+
+#con_form .button {
+    border-color:#111;
+}
+
+/* Button Hover Color */
+
+#banner .button:hover {
+    color:#9a5341;
+    border-color:#9a5341;
+}
+
+#con_form .button:hover {
+    color:#9a5341;
+    border-color:#9a5341;
+}
+/*------------------------------------------------------------------------------------------*/
+/* 7. Footer */
+/*------------------------------------------------------------------------------------------*/
+#landing-footer
+{
+box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2);
+}
+#landing-footer, #landing-footer p, #landing-footer a {
+    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+    font-size:12px;
+    font-weight:normal;
+    color:#999;
+}
+
+/* Footer Icon Color */
+
+#landing-footer i {
+    color:#999;
+}
+
