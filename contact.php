@@ -16,7 +16,24 @@
 }
 
 ?> 
- 
+ <style>
+ 	.address
+ 	{
+ 		display:inline-block;
+ 		width:48%;
+ 		min-width:300px;
+ 		vertical-align: top;
+ 	}
+ 	.address h4
+ 	{
+ 		text-decoration: underline;
+ 	}
+ 	.address p
+ 	{
+
+ 	}
+
+ </style>
     <!--Main Content Area-->
     <main id="content">
         <!--Services-->
@@ -27,7 +44,7 @@
 	                    <h2 class="section-title">CONTACT</h2>
 	                </div>					
 	                <!-- Form starts -->
-					<div class="col-61">						
+					<div class="">						
 						<form name="sentMessage" id="contact_Form"  method="post">
 						<div class="col-2">
 							<input type="text" class="form-control " placeholder="Your Name *" id="contact_name" name="contact_name" >
@@ -57,20 +74,27 @@
 					<!-- Form Ends -->
 					
 					<!-- Address details -->
-	                <div class="col-38 text-left">
+					<h3 class="text-center" style="border-top:1px solid #ccc;padding-top: 5px;margin-top: 10px;">Our Address</h3>
+	                <div class="text-center">
 	                	<div class="classic address">
-	                		<h3>Our Address</h3>
+	                		<h4>Puducherry:</h4>	                		
 	                		<p>No: 29, Subramaniar Koil Street,
 							Kathirkamam,<br/> Puducherry - 605 009, India.</p>
 							<p><span class="fa fa-phone"></span> (91) - (413) - 2275 575</p>
 							<p><span class="fa fa-mobile"></span> (91) 8807129650 </p>
 							<span class="fa fa-envelope-o"></span> <a href="#">info@etekchnoservices.com</a>
 	                	</div>
+	                	<div class="classic address">
+	                		<h4>Chennai:</h4>	                		
+	                		<p>No: 10 gandhi nagar extention 2 Pallavaram Chrompet,<br/> Nagalkeni,<br/> Chennai - 600044, India.</p>
+							<p><span class="fa fa-mobile"></span> (91) 9789761928 </p>
+							<span class="fa fa-envelope-o"></span> <a href="#">info@etekchnoservices.com</a>
+	                	</div>
 	                </div> 
 	                <!-- Address Ends  -->
             	</div>
             	<!-- Map Area -->
-            	<div class="row clearfix">
+            	<div class="row clearfix" style="padding-top:0">
             		<div id="map_area">
             			
             		</div>

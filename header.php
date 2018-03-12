@@ -41,6 +41,10 @@ date_default_timezone_set('Asia/Kolkata');
 
     <!--Icon Fonts - Font Awesome Icons-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <!-- Gallery css -->
+    <link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/jgallery.min.css?v=1.6.4" />
 
     <!-- Animate CSS-->
     <link href="css/animate.css" rel="stylesheet" type="text/css">
