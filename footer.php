@@ -48,6 +48,10 @@
 <link rel="stylesheet"  href="css/lightslider.css"/>
 <script src="js/lightslider.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbuVxM8vd876DdJ3vDZMakcC98TUwOGYs&callback=initMap" type="text/javascript"></script>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3f041356bdbbd818af874da89e84bd312c4881d9
 	<script type="application/javascript">
 		function initialize() {
 			var mapOptions = {

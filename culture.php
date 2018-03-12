@@ -13,6 +13,8 @@
 			<h2 class="section-title">CULTURE</h2>
 		</div>
        <div class="col-1">
+	<div id="" class="row clearfix">
+       <div class="col-1">                 
 	       <div id="gallery">
 			    <div class="album" data-jgallery-album-title="Album 1">
 			        <a href="images/culture/image_1.png"><img src="images/culture/thamizh.jpg" alt="Photo 1" /></a>
