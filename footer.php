@@ -4,7 +4,7 @@
     <footer id="landing-footer" class="clearfix">
         <div class="row clearfix">
 
-            <p id="copyright" class="col-2">&copy; 2017 Etekchno Services Private Limited. All Rights Reserved.</p>
+            <p id="copyright" class="col-2">&copy; 2019 Etekchno Services Private Limited. All Rights Reserved.</p>
 
             <!--Social Icons in Footer-->
             <ul class="col-2 social-icons">
