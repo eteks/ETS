@@ -85,7 +85,7 @@ date_default_timezone_set('Asia/Kolkata');
 $url = $_SERVER['REQUEST_URI'];
 
 $host = explode('/',$url);
-$cur=$host[2];
+$cur=$host[1];
 $page=explode('.',$cur);
 $page_class = $page[0];
 ?>
